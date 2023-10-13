@@ -1,4 +1,4 @@
-// In this exercise I am practicing with data types and operators and the console.
+// In this exercise I am practicing with data types and operators in the console.
 
 // What will I get if I run the following in the Javascript Console in Google Chrome?
 
