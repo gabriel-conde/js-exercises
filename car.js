@@ -2,7 +2,7 @@
 // This car will only let you drive if you are over 18. It will do the following:
 
 
-// using prompt() and alert(), asks a user for their age.
+// using prompt() and alert(), it asks a user for their age.
 // IF they say they are below 18, it will respond with:
 // "Sorry, you are too young to drive this car. Powering off."
 
