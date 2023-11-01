@@ -3,6 +3,14 @@ var database = [
     {
         username: "Cathy",
         password: "cathy123"
+    },
+    {
+        username: "Leo",
+        password: "leo123"
+    },
+    {
+        username: "Chris",
+        password: "chris123"
     }
 ];
 
@@ -28,12 +36,21 @@ var passwordPrompt = prompt("What is your password");
 
 // Created a function of 'signIn' that takes in two parameters of 'username' and 'password'.
 // Depending on the users input, it will return the array of 'newsfeed' or a message.
+function isUserValid(username, password) {
+    for (var i = 0; i < database.length; i++) {
+        if (database[i].username === username && database[i].password === password){
+            return true;
+        }
+    }
+    return false;
+}
+
 function signIn(username, password) {
-    if (username === database[0].username && password === database[0].password) {
+    if (isUserValid(username, password)) {
         console.log(newsfeed);
     }
     else {
-        console.log("Sorry, incorrect username and password");
+        alert("Sorry, incorrect username and password");
     }
 }
 

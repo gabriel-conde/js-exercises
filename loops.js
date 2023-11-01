@@ -1,4 +1,4 @@
-var list = [
+var listOfFruit = [
     "Apple",
     "Orange",
     "Grape",
@@ -17,6 +17,33 @@ var list = [
     "Cantaloupe",
 ];
 
-for (var i=0; i < list.length; i++) {
-    console.log(list[i] + "!!");
+var listOfFruitImportant = [
+    "Apple!!",
+    "Orange!!",
+    "Strawberry!!",
+    "Mango!!",
+    "Peach!!",
+    "Watermelon!!",
+];
+// for (var i=0; i < listOfFruit.length; i++) {
+//     console.log(listOfFruit[i] , i;
+// }
+
+// var counterOne = 10;
+// while (counterOne > 0) {
+//     console.log(counterOne);
+//     counterOne--;
+// }
+
+// var counterTwo = 10;
+// do {
+//     console.log(counterTwo);
+//     counterTwo--;
+// } while (counterTwo > 0);
+
+function logListOfFruit(fruit, i) {
+    console.log(fruit, i);
 }
+
+listOfFruit.forEach(logListOfFruit);
+listOfFruitImportant.forEach(logLisstOfFruit);
